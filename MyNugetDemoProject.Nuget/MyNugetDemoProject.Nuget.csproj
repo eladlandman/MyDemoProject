@@ -61,6 +61,6 @@
 del "$(TargetDir)*.nuspec" 2&gt;NUL</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir)..\NuGetPack.exe" "$(ProjectPath)" "$(TargetPath)" "$(ConfigurationName)"</PostBuildEvent>
+    <PostBuildEvent>"$(SolutionDir)..\NuGetPack.exe" "$(ProjectPath)" "$(TargetPath)" "$(ConfigurationName)" "/CreateReadme"</PostBuildEvent>
   </PropertyGroup>
 </Project>
